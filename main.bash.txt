@@ -19,3 +19,28 @@ sudo systemctl enable motion
 
 sudo systemctl start motion
 
+### If you need to stop the service, simply run the following command:
+sudo systemctl stop motion
+  ## Restart the webcam 
+  sudo systemctl restart motion
+  
+  sudo raspi-config
+  sudo modprobe bcm2835-v4l2
+  sudo nano /etc/modules
+  bcm2835-v4l2
+  ####  Now reboot the Pi, and the stream should now work.
+  sudo reboot
+  ### You should now be able to access the Raspberry Pi webcam stream by going to the Pi’s IP address on port 8081.
+  
+  #### Saving Motion Footage and Photos
+  
+  sudo mkdir /motion
+  sudo chgrp motion /motion 
+sudo chmod g+rwx /motion
+sudo nano /etc/motion/motion.conf
+target_dir /motion
+sudo systemctl restart motion
+ls /motion
+
+
+  
