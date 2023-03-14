@@ -7,4 +7,6 @@ We will be using the terminal, so open the terminal on the Pi or connect to it v
 then install all commnad packages 
 check out the Webcam Stream  IP address
 the psor is 8081
-now should  be able to access the Raspberry Pi webcam stream by going to the Pi’s IP address on port 8081.
+now should  be able to access the Raspberry Pi webcam stream by going to the Pi’s IP address on port 808
+
+             
