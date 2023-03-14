@@ -8,3 +8,14 @@ sudo apt install autoconf automake build-essential pkgconf libtool git libzip-de
 
 sudo wget https://github.com/Motion-Project/motion/releases/download/release-4.5.1/$(lsb_release -cs)_motion_4.5.1-1_$(dpkg --print-architecture
 ).deb   -  #sudo dpkg -i $(lsb_release -cs)_motion_4.5.1-1_$(dpkg --print-architecture).deb
+
+
+
+sudo nano /etc/motion/motion.conf
+### make some change 1 daemon off - trun on 2, stream_localhost off 3picture_output off , 4 movie_output off then save and exit file
+
+
+sudo systemctl enable motion
+
+sudo systemctl start motion
+
